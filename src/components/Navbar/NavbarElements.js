@@ -24,19 +24,53 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 20px;
   max-width: 1100px;
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(LinkScroll)`
   color: #fff;
-  justify-self: flex-start;
   font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
+  display: inline-block;
+  margin: auto 0 25px 0;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+
+  &::before {
+    margin-right: 10px;
+    content: "[";
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  &::after {
+    margin-left: 10px;
+    content: "]";
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -59,7 +93,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: 24px;
+  margin-right: 10px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -67,21 +101,50 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItems = styled.li`
+  display: flex;
+  align-items: center;
   height: 80px;
-  padding: 20px 0;
 `;
 
 export const NavLinks = styled(LinkScroll)`
   color: #fff;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-decoration: none;
-  padding: 0;
-  margin: auto 0 auto 2rem;
-  height: 40px;
+  margin: auto 0 25px 2rem;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 2px solid #fff;
+  &::before,
+  &::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+
+  &::before {
+    margin-right: 10px;
+    content: "[";
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  &::after {
+    margin-left: 10px;
+    content: "]";
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
   }
 `;

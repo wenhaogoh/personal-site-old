@@ -8,6 +8,8 @@ import {
   TopbarLink,
 } from "./TopbarElements";
 
+import { navInfo } from "../../constants/Data";
+
 const Topbar = (props) => {
   return (
     <TopbarContainer isOpen={props.isOpen} onClick={props.toggle}>
@@ -16,18 +18,18 @@ const Topbar = (props) => {
       </Icon>
       <TopbarWrapper>
         <TopbarMenu>
-          <TopbarLink to="about" onClick={props.toggle}>
-            about me.
-          </TopbarLink>
-          <TopbarLink to="experience" onClick={props.toggle}>
-            experience.
-          </TopbarLink>
-          <TopbarLink to="projects" onClick={props.toggle}>
-            projects.
-          </TopbarLink>
-          <TopbarLink to="contact" onClick={props.toggle}>
-            contact.
-          </TopbarLink>
+          {navInfo.map((info) => (
+            <TopbarLink
+              to={info.link}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              onClick={props.toggle}
+            >
+              {info.name}
+            </TopbarLink>
+          ))}
         </TopbarMenu>
       </TopbarWrapper>
     </TopbarContainer>

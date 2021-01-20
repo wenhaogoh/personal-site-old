@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Topbar from "../components/Topbar/Topbar";
 import Navbar from "../components/Navbar/Navbar";
-import AboutSection from "../components/Sections/AboutSection/AboutSection";
+import TextSection from "../components/Sections/TextSection/TextSection";
 import CardsSection from "../components/Sections/CardsSection/CardsSection";
 
 import { experienceInfo, projectsInfo } from "../constants/Data";
@@ -17,7 +17,8 @@ const Home = () => {
     <>
       <Topbar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <AboutSection />
+      <TextSection id="home" />
+      <TextSection id="about" />
       <CardsSection id="experience" title="experience." info={experienceInfo} />
       <CardsSection id="projects" title="projects." info={projectsInfo} />
     </>

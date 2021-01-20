@@ -46,7 +46,7 @@ export const TopbarMenu = styled.ul`
 `;
 
 export const TopbarLink = styled(LinkScroll)`
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
@@ -56,8 +56,38 @@ export const TopbarLink = styled(LinkScroll)`
   color: #fff;
   cursor: pointer;
 
-  &:hover {
-    color: #01bf71;
-    transition: 0.2s ease-in-out;
+  &::before,
+  &::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+
+  &::before {
+    margin-right: 10px;
+    content: "[";
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  &::after {
+    margin-left: 10px;
+    content: "]";
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
   }
 `;

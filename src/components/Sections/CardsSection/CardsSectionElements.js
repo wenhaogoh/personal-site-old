@@ -4,22 +4,26 @@ export const SectionContainer = styled.div`
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #000;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
+    padding-top: 80px;
+    justify-content: flex-start;
   }
 
   @media screen and (max-width: 480px) {
     height: 1300px;
+    padding-top: 80px;
+    justify-content: flex-start;
   }
 `;
 
 export const SectionWrapper = styled.div`
   max-width: 1000px;
-  margin: 0 auto;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -65,7 +69,7 @@ export const CardIcon = styled.img`
 export const SectionH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 64px;
+  margin-top: 40px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

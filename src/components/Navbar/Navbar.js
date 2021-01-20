@@ -15,7 +15,9 @@ const Navbar = (props) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo>wenhao.</NavLogo>
+        <NavLogo to="home" smooth={true} duration={500} spy={true} exact="true">
+          wenhao.
+        </NavLogo>
         <MobileIcon onClick={props.toggle}>
           <FaBars />
         </MobileIcon>
@@ -28,7 +30,6 @@ const Navbar = (props) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
               >
                 {info.name}
               </NavLinks>
