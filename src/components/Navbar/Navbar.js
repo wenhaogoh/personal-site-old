@@ -22,8 +22,8 @@ const Navbar = (props) => {
           <FaBars />
         </MobileIcon>
         <NavMenu>
-          {navInfo.map((info) => (
-            <NavItems>
+          {navInfo.map((info, index) => (
+            <NavItems key={index}>
               <NavLinks
                 to={info.link}
                 smooth={true}

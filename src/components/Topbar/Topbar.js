@@ -18,8 +18,9 @@ const Topbar = (props) => {
       </Icon>
       <TopbarWrapper>
         <TopbarMenu>
-          {navInfo.map((info) => (
+          {navInfo.map((info, index) => (
             <TopbarLink
+              key={index}
               to={info.link}
               smooth={true}
               duration={500}

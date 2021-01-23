@@ -12,6 +12,18 @@ export const TextContainer = styled.div`
     padding-top: 80px;
     justify-content: flex-start;
   }
+
+  @media screen and (min-height: 800px) {
+    height: 1000px;
+  }
+
+  @media screen and (min-height: 1000px) {
+    height: 1200px;
+  }
+
+  @media screen and (min-height: 1200px) {
+    height: 1400px;
+  }
 `;
 
 export const TextContent = styled.div`
