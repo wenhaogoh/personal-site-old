@@ -8,6 +8,18 @@ export const SectionContainer = styled.div`
   align-items: center;
   background: #000;
 
+  @media screen and (min-height: 800px) {
+    height: 1000px;
+  }
+
+  @media screen and (min-height: 1000px) {
+    height: 1200px;
+  }
+
+  @media screen and (min-height: 1200px) {
+    height: 1400px;
+  }
+
   @media screen and (max-width: 768px) {
     height: 1100px;
     padding-top: 80px;
@@ -18,14 +30,6 @@ export const SectionContainer = styled.div`
     height: 1300px;
     padding-top: 80px;
     justify-content: flex-start;
-  }
-
-  @media screen and (min-height: 800px) {
-    height: 1200px;
-  }
-
-  @media screen and (min-height: 1200px) {
-    height: 1400px;
   }
 `;
 
@@ -48,10 +52,16 @@ export const SectionWrapper = styled.div`
   }
 `;
 
-export const CardIcon = styled.img`
+export const CardIconWrapper = styled.div`
+  display: flex;
+  align-items: center;
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
+`;
+
+export const CardIcon = styled.img`
+  width: 100%;
 `;
 
 export const SectionH1 = styled.h1`
@@ -110,12 +120,49 @@ export const CardFaceBack = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   position: absolute;
   padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+`;
+
+export const CardFaceBackSectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+export const CardSmallIconsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+`;
+
+export const CardSmallIconWrapper = styled.div`
+  height: 100%;
+  margin: 0 5px;
+  &:hover {
+    p {
+      transition: opacity 0.2s ease-in;
+      opacity: 1;
+      cursor: default;
+    }
+  }
+`;
+
+export const CardSmallIcon = styled.img`
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 40px;
+  width: 40px;
+`;
+
+export const CardSmallIconP = styled.p`
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
 `;

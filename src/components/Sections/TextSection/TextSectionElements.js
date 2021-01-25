@@ -8,11 +8,6 @@ export const TextContainer = styled.div`
   align-items: center;
   background: #000;
 
-  @media screen and (max-width: 768px) {
-    padding-top: 80px;
-    justify-content: flex-start;
-  }
-
   @media screen and (min-height: 800px) {
     height: 1000px;
   }
@@ -23,6 +18,11 @@ export const TextContainer = styled.div`
 
   @media screen and (min-height: 1200px) {
     height: 1400px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+    justify-content: flex-start;
   }
 `;
 

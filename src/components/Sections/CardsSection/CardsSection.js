@@ -9,7 +9,13 @@ import {
   CardFaceBack,
   CardH2,
   CardIcon,
+  CardIconWrapper,
   CardP,
+  CardSmallIconsWrapper,
+  CardSmallIconWrapper,
+  CardSmallIcon,
+  CardSmallIconP,
+  CardFaceBackSectionWrapper,
 } from "./CardsSectionElements";
 
 const CardsSection = (props) => {
@@ -32,12 +38,41 @@ const CardsSection = (props) => {
           >
             <Card key={index} isFlipped={isFlipped[index].isFlipped}>
               <CardFaceFront>
-                <CardIcon src={experience.icon} />
+                <CardIconWrapper>
+                  <CardIcon src={experience.icon} />
+                </CardIconWrapper>
                 <CardH2>{experience.title}</CardH2>
                 <CardP>{experience.description}</CardP>
               </CardFaceFront>
               <CardFaceBack>
-                <div>test</div>
+                <CardFaceBackSectionWrapper>
+                  <CardH2>Tech Stack</CardH2>
+                  <CardSmallIconsWrapper>
+                    {experience.stack.map((tech, index) => (
+                      <CardSmallIconWrapper>
+                        <CardSmallIcon
+                          key={index}
+                          src={tech.icon}
+                        ></CardSmallIcon>
+                        <CardSmallIconP>{tech.name}</CardSmallIconP>
+                      </CardSmallIconWrapper>
+                    ))}
+                  </CardSmallIconsWrapper>
+                </CardFaceBackSectionWrapper>
+                <CardFaceBackSectionWrapper>
+                  <CardH2>Languages</CardH2>
+                  <CardSmallIconsWrapper>
+                    {experience.languages.map((language, index) => (
+                      <CardSmallIconWrapper>
+                        <CardSmallIcon
+                          key={index}
+                          src={language.icon}
+                        ></CardSmallIcon>
+                        <CardSmallIconP>{language.name}</CardSmallIconP>
+                      </CardSmallIconWrapper>
+                    ))}
+                  </CardSmallIconsWrapper>
+                </CardFaceBackSectionWrapper>
               </CardFaceBack>
             </Card>
           </CardWrapper>
