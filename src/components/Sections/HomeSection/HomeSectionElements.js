@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,12 +9,12 @@ export const HomeContainer = styled.div`
   background: #000;
   cursor: default;
 
-  @media screen and (min-height: 800px) {
-    height: 1000px;
+  @media screen and (min-height: 700px) {
+    height: 800px;
   }
 
   @media screen and (min-height: 1000px) {
-    height: 1200px;
+    height: 1000px;
   }
 
   @media screen and (min-height: 1200px) {

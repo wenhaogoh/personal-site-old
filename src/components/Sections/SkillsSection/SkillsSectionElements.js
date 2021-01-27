@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,20 +9,16 @@ export const SkillsContainer = styled.div`
   background: #000;
   cursor: default;
 
-  @media screen and (min-height: 800px) {
-    height: 2000px;
-  }
-
   @media screen and (min-height: 1000px) {
-    height: 2400px;
+    height: 1200px;
   }
 
   @media screen and (min-height: 1200px) {
-    height: 2800px;
+    height: 1400px;
   }
 
   @media screen and (max-width: 768px) {
-    height: 2200px;
+    height: 2600px;
     padding-top: 80px;
     justify-content: flex-start;
   }
@@ -35,8 +31,6 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsContent = styled.div`
-  margin: 20px;
-  padding: 20px;
   max-width: 1000px;
   position: absolute;
   display: flex;
