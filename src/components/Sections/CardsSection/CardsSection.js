@@ -49,11 +49,8 @@ const CardsSection = (props) => {
                   <CardH2>Tech Stack</CardH2>
                   <CardSmallIconsWrapper>
                     {experience.stack.map((tech, index) => (
-                      <CardSmallIconWrapper>
-                        <CardSmallIcon
-                          key={index}
-                          src={tech.icon}
-                        ></CardSmallIcon>
+                      <CardSmallIconWrapper key={index}>
+                        <CardSmallIcon src={tech.icon} />
                         <CardSmallIconP>{tech.name}</CardSmallIconP>
                       </CardSmallIconWrapper>
                     ))}
@@ -63,11 +60,8 @@ const CardsSection = (props) => {
                   <CardH2>Languages</CardH2>
                   <CardSmallIconsWrapper>
                     {experience.languages.map((language, index) => (
-                      <CardSmallIconWrapper>
-                        <CardSmallIcon
-                          key={index}
-                          src={language.icon}
-                        ></CardSmallIcon>
+                      <CardSmallIconWrapper key={index}>
+                        <CardSmallIcon src={language.icon}></CardSmallIcon>
                         <CardSmallIconP>{language.name}</CardSmallIconP>
                       </CardSmallIconWrapper>
                     ))}

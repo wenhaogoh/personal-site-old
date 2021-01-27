@@ -57,6 +57,7 @@ export const AboutP = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
+    text-align: center;
   }
 
   @media screen and (max-width: 480px) {
@@ -66,7 +67,7 @@ export const AboutP = styled.p`
 
 export const AboutLinkWrapper = styled.div`
   font-size: 24px;
-  margin-top: 24px;
+  margin-top: 48px;
   display: flex;
   justify-content: space-between;
   width: 108%;

@@ -7,7 +7,7 @@ export const TopbarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: #000;
   display: grid;
   align-items: center;
   left: 0;

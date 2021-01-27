@@ -24,7 +24,12 @@ const AboutSection = (props) => {
           >
             linkedin.
           </AboutLink>
-          <AboutLink>resume.</AboutLink>
+          <AboutLink
+            href="https://drive.google.com/uc?export=download&id=1KGrqx-eX_gNZcOIIQx-JN6IUAJiQIXmq"
+            target="_blank"
+          >
+            resume.
+          </AboutLink>
         </AboutLinkWrapper>
       </AboutContent>
     </AboutContainer>

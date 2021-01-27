@@ -6,12 +6,14 @@ import DoneDeal from "../images/icons/projects/DoneDeal.svg";
 import NUSave from "../images/icons/projects/NUSave.png";
 import Orbital from "../images/icons/projects/Orbital.png";
 
+import C from "../images/icons/languages/C.svg";
 import CSharp from "../images/icons/languages/CSharp.svg";
 import CSS from "../images/icons/languages/CSS.svg";
 import HTML from "../images/icons/languages/HTML.svg";
 import Java from "../images/icons/languages/Java.svg";
 import JavaScript from "../images/icons/languages/JavaScript.svg";
 import PugJS from "../images/icons/languages/PugJS.svg";
+import Python from "../images/icons/languages/Python.svg";
 import TypeScript from "../images/icons/languages/TypeScript.svg";
 
 import AndroidStudio from "../images/icons/technologies/AndroidStudio.png";
@@ -21,6 +23,7 @@ import Docker from "../images/icons/technologies/Docker.svg";
 import Express from "../images/icons/technologies/Express.svg";
 import GCP from "../images/icons/technologies/GCP.svg";
 import Git from "../images/icons/technologies/Git.svg";
+import Heroku from "../images/icons/technologies/Heroku.svg";
 import MySQL from "../images/icons/technologies/MySQL.svg";
 import NodeJS from "../images/icons/technologies/NodeJS.svg";
 import PostgreSQL from "../images/icons/technologies/PostgreSQL.svg";
@@ -34,10 +37,10 @@ export const navInfo = [
     name: "about me.",
     link: "about",
   },
-  // {
-  //   name: "skills.",
-  //   link: "skills",
-  // },
+  {
+    name: "skills.",
+    link: "skills",
+  },
   {
     name: "experience.",
     link: "experience",
@@ -58,6 +61,135 @@ export const aboutInfo =
   "Hi there! I'm Wen Hao and I'm a year 2 computer science undergraduate from National University of Singapore. " +
   "I enjoy solving real world problems and bringing about entertainment using the latest technologies. " +
   "I have also fallen in love with dark mode.";
+
+export const skillsInfo = {
+  proficient: [
+    {
+      title: "Languages",
+      items: [
+        {
+          name: "Java",
+          icon: Java,
+        },
+        {
+          name: "JavaScript",
+          icon: JavaScript,
+        },
+        {
+          name: "HTML",
+          icon: HTML,
+        },
+        {
+          name: "CSS",
+          icon: CSS,
+        },
+        {
+          name: "PugJS",
+          icon: PugJS,
+        },
+      ],
+    },
+    {
+      title: "Frameworks/Libraries",
+      items: [
+        {
+          name: "NodeJS",
+          icon: NodeJS,
+        },
+        {
+          name: "Express",
+          icon: Express,
+        },
+        {
+          name: "React",
+          icon: React,
+        },
+        {
+          name: "Sequelize",
+          icon: Sequelize,
+        },
+      ],
+    },
+    {
+      title: "Platforms/Databases",
+      items: [
+        {
+          name: "Git",
+          icon: Git,
+        },
+        {
+          name: "MySQL",
+          icon: MySQL,
+        },
+        {
+          name: "PostgreSQL",
+          icon: PostgreSQL,
+        },
+      ],
+    },
+  ],
+  familiar: [
+    {
+      title: "Languages",
+      items: [
+        {
+          name: "Python",
+          icon: Python,
+        },
+        {
+          name: "C/C++",
+          icon: C,
+        },
+        {
+          name: "C#",
+          icon: CSharp,
+        },
+        {
+          name: "TypeScript",
+          icon: TypeScript,
+        },
+      ],
+    },
+    {
+      title: "Frameworks/Libraries",
+      items: [
+        {
+          name: "Spring",
+          icon: Spring,
+        },
+      ],
+    },
+    {
+      title: "Platforms/Databases",
+      items: [
+        {
+          name: "Unity",
+          icon: Unity,
+        },
+        {
+          name: "Android Studios",
+          icon: AndroidStudio,
+        },
+        {
+          name: "AWS",
+          icon: AWS,
+        },
+        {
+          name: "GCP",
+          icon: GCP,
+        },
+        {
+          name: "Heroku",
+          icon: Heroku,
+        },
+        {
+          name: "Docker",
+          icon: Docker,
+        },
+      ],
+    },
+  ],
+};
 
 export const experienceInfo = [
   {
