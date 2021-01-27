@@ -19,6 +19,7 @@ import TypeScript from "../images/icons/languages/TypeScript.svg";
 import AndroidStudio from "../images/icons/technologies/AndroidStudio.png";
 import Aseprite from "../images/icons/technologies/Aseprite.png";
 import AWS from "../images/icons/technologies/AWS.svg";
+import Bootstrap from "../images/icons/technologies/Bootstrap.svg";
 import Docker from "../images/icons/technologies/Docker.svg";
 import Express from "../images/icons/technologies/Express.svg";
 import GCP from "../images/icons/technologies/GCP.svg";
@@ -30,6 +31,7 @@ import PostgreSQL from "../images/icons/technologies/PostgreSQL.svg";
 import React from "../images/icons/technologies/React.svg";
 import Sequelize from "../images/icons/technologies/Sequelize.svg";
 import Spring from "../images/icons/technologies/Spring.svg";
+import SQLite from "../images/icons/technologies/SQLite.svg";
 import Unity from "../images/icons/technologies/Unity.svg";
 
 export const navInfo = [
@@ -83,10 +85,6 @@ export const skillsInfo = {
           name: "CSS",
           icon: CSS,
         },
-        {
-          name: "PugJS",
-          icon: PugJS,
-        },
       ],
     },
     {
@@ -104,10 +102,6 @@ export const skillsInfo = {
           name: "React",
           icon: React,
         },
-        {
-          name: "Sequelize",
-          icon: Sequelize,
-        },
       ],
     },
     {
@@ -120,6 +114,10 @@ export const skillsInfo = {
         {
           name: "MySQL",
           icon: MySQL,
+        },
+        {
+          name: "SQLite",
+          icon: SQLite,
         },
         {
           name: "PostgreSQL",
@@ -148,6 +146,10 @@ export const skillsInfo = {
           name: "TypeScript",
           icon: TypeScript,
         },
+        {
+          name: "PugJS",
+          icon: PugJS,
+        },
       ],
     },
     {
@@ -156,6 +158,14 @@ export const skillsInfo = {
         {
           name: "Spring",
           icon: Spring,
+        },
+        {
+          name: "Sequelize",
+          icon: Sequelize,
+        },
+        {
+          name: "Bootstrap",
+          icon: Bootstrap,
         },
       ],
     },
@@ -194,7 +204,7 @@ export const skillsInfo = {
 export const experienceInfo = [
   {
     title: "PayPal",
-    description: "Software Engineer Intern",
+    subtitle: "Software Engineer Intern",
     icon: PayPal,
     isFlipped: false,
     stack: [
@@ -233,10 +243,11 @@ export const experienceInfo = [
         icon: JavaScript,
       },
     ],
+    descriptions: ["point 1", "point 2", "point 3"],
   },
   {
     title: "Developer Student Club",
-    description: "Software Engineer",
+    subtitle: "Software Engineer",
     icon: DSC,
     isFlipped: false,
     stack: [
@@ -291,10 +302,11 @@ export const experienceInfo = [
         icon: CSS,
       },
     ],
+    descriptions: ["point 1", "point 2", "point 3"],
   },
   {
     title: "Roboto Coding Academy",
-    description: "Software Engineer Intern",
+    subtitle: "Software Engineer Intern",
     icon: Roboto,
     isFlipped: false,
     stack: [
@@ -313,6 +325,10 @@ export const experienceInfo = [
       {
         name: "NodeJS",
         icon: NodeJS,
+      },
+      {
+        name: "Bootstrap",
+        icon: Bootstrap,
       },
       {
         name: "AWS",
@@ -337,13 +353,14 @@ export const experienceInfo = [
         icon: CSS,
       },
     ],
+    descriptions: ["point 1", "point 2", "point 3"],
   },
 ];
 
 export const projectsInfo = [
   {
     title: "NUSave",
-    description: "Budget Management App",
+    subtitle: "Budget Management App",
     icon: NUSave,
     isFlipped: false,
     stack: [
@@ -366,10 +383,11 @@ export const projectsInfo = [
         icon: CSS,
       },
     ],
+    descriptions: ["point 1", "point 2", "point 3"],
   },
   {
     title: "'Til Kingdom Come",
-    description: "2D Multiplayer Game",
+    subtitle: "2D Multiplayer Game",
     icon: Orbital,
     isFlipped: false,
     stack: [
@@ -392,16 +410,21 @@ export const projectsInfo = [
         icon: CSharp,
       },
     ],
+    descriptions: ["point 1", "point 2", "point 3"],
   },
   {
     title: "DoneDeal",
-    description: "Expense Tracking App",
+    subtitle: "Expense Tracking App",
     icon: DoneDeal,
     isFlipped: false,
     stack: [
       {
         name: "Android Studios",
         icon: AndroidStudio,
+      },
+      {
+        name: "SQLite",
+        icon: SQLite,
       },
       {
         name: "Git",
@@ -414,5 +437,6 @@ export const projectsInfo = [
         icon: Java,
       },
     ],
+    descriptions: ["point 1", "point 2", "point 3"],
   },
 ];

@@ -135,7 +135,7 @@ export const SkillsCardSmallIconP = styled.p`
   transition: opacity 0.2s ease-out;
 `;
 
-export const SkillsCardSmallIconWrapper = styled.p`
+export const SkillsCardSmallIconWrapper = styled.div`
   height: 100%;
   margin: 0 5px;
   &:hover {

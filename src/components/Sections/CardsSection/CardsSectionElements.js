@@ -73,6 +73,49 @@ export const SectionH1 = styled.h1`
   }
 `;
 
+export const SectionP = styled.p`
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+
+  &::before {
+    margin-right: 10px;
+    content: "[";
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  &::after {
+    margin-left: 10px;
+    content: "]";
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+`;
+
 export const CardH2 = styled.h2`
   font-size: 1rem;
   text-align: center;
@@ -166,3 +209,52 @@ export const CardSmallIconP = styled.p`
   opacity: 0;
   transition: opacity 0.2s ease-out;
 `;
+
+export const ModalContainer = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
+  transform: ${(props) => (props.isOpen ? "scale(1)" : "scale(0.8)")};
+  opacity: ${(props) => (props.isOpen ? "1" : "0")};
+`;
+
+export const ModalContent = styled.div`
+  display: flex;
+  padding: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+`;
+
+export const SectionItemWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+`;
+
+export const ModalUl = styled.ul`
+  margin-top: 10px;
+  font-size: 0.9rem;
+`;
+
+export const ModalLi = styled.li``;
