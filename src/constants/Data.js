@@ -2,7 +2,9 @@ import PayPal from "../images/icons/companies/PayPal.svg";
 import DSC from "../images/icons/companies/DSC.png";
 import Roboto from "../images/icons/companies/Roboto.png";
 
+import DoneDeal from "../images/icons/projects/DoneDeal.svg";
 import NUSave from "../images/icons/projects/NUSave.png";
+import Orbital from "../images/icons/projects/Orbital.png";
 
 import CSharp from "../images/icons/languages/CSharp.svg";
 import CSS from "../images/icons/languages/CSS.svg";
@@ -12,12 +14,13 @@ import JavaScript from "../images/icons/languages/JavaScript.svg";
 import PugJS from "../images/icons/languages/PugJS.svg";
 import TypeScript from "../images/icons/languages/TypeScript.svg";
 
+import AndroidStudio from "../images/icons/technologies/AndroidStudio.png";
+import Aseprite from "../images/icons/technologies/Aseprite.png";
 import AWS from "../images/icons/technologies/AWS.svg";
 import Docker from "../images/icons/technologies/Docker.svg";
 import Express from "../images/icons/technologies/Express.svg";
 import GCP from "../images/icons/technologies/GCP.svg";
 import Git from "../images/icons/technologies/Git.svg";
-import Heroku from "../images/icons/technologies/Heroku.svg";
 import MySQL from "../images/icons/technologies/MySQL.svg";
 import NodeJS from "../images/icons/technologies/NodeJS.svg";
 import PostgreSQL from "../images/icons/technologies/PostgreSQL.svg";
@@ -31,6 +34,10 @@ export const navInfo = [
     name: "about me.",
     link: "about",
   },
+  // {
+  //   name: "skills.",
+  //   link: "skills",
+  // },
   {
     name: "experience.",
     link: "experience",
@@ -39,11 +46,18 @@ export const navInfo = [
     name: "projects.",
     link: "projects",
   },
-  {
-    name: "contact.",
-    link: "contact",
-  },
+  // {
+  //   name: "contact.",
+  //   link: "contact",
+  // },
 ];
+
+export const homeInfo = "Hello World!";
+
+export const aboutInfo =
+  "Hi there! I'm Wen Hao and I'm a year 2 computer science undergraduate from National University of Singapore. " +
+  "I enjoy solving real world problems and bringing about entertainment using the latest technologies. " +
+  "I have also fallen in love with dark mode.";
 
 export const experienceInfo = [
   {
@@ -89,7 +103,7 @@ export const experienceInfo = [
     ],
   },
   {
-    title: "Developer Student Club NUS",
+    title: "Developer Student Club",
     description: "Software Engineer",
     icon: DSC,
     isFlipped: false,
@@ -115,16 +129,16 @@ export const experienceInfo = [
         icon: Sequelize,
       },
       {
-        name: "AWS",
-        icon: AWS,
-      },
-      {
         name: "GCP",
         icon: GCP,
       },
       {
-        name: "Heroku",
-        icon: Heroku,
+        name: "Docker",
+        icon: Docker,
+      },
+      {
+        name: "Git",
+        icon: Git,
       },
     ],
     languages: [
@@ -168,6 +182,14 @@ export const experienceInfo = [
         name: "NodeJS",
         icon: NodeJS,
       },
+      {
+        name: "AWS",
+        icon: AWS,
+      },
+      {
+        name: "Git",
+        icon: Git,
+      },
     ],
     languages: [
       {
@@ -189,7 +211,7 @@ export const experienceInfo = [
 export const projectsInfo = [
   {
     title: "NUSave",
-    description: "Java, JavaFX",
+    description: "Budget Management App",
     icon: NUSave,
     isFlipped: false,
     stack: [
@@ -197,41 +219,61 @@ export const projectsInfo = [
         name: "JavaFX",
         icon: Java,
       },
+      {
+        name: "Git",
+        icon: Git,
+      },
     ],
     languages: [
       {
         name: "Java",
         icon: Java,
+      },
+      {
+        name: "CSS",
+        icon: CSS,
       },
     ],
   },
   {
     title: "'Til Kingdom Come",
-    description: "Unity, C#",
-    icon: DSC,
+    description: "2D Multiplayer Game",
+    icon: Orbital,
     isFlipped: false,
     stack: [
       {
-        name: "Java",
-        icon: Java,
+        name: "Unity",
+        icon: Unity,
+      },
+      {
+        name: "Aseprite",
+        icon: Aseprite,
+      },
+      {
+        name: "Git",
+        icon: Git,
       },
     ],
     languages: [
       {
-        name: "Java",
-        icon: Java,
+        name: "C#",
+        icon: CSharp,
       },
     ],
   },
   {
     title: "DoneDeal",
-    description: "Android Studios",
-    icon: Roboto,
+    description: "Expense Tracking App",
+    icon: DoneDeal,
     isFlipped: false,
     stack: [
       {
-        name: "Java",
-        icon: Java,
+        name: "Android Studios",
+        icon: AndroidStudio,
+      },
+      {
+        name: "Git",
+        icon: Git,
       },
     ],
     languages: [

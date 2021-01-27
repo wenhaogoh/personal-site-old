@@ -8,6 +8,7 @@ import {
   CardFaceFront,
   CardFaceBack,
   CardH2,
+  CardBackH2,
   CardIcon,
   CardIconWrapper,
   CardP,

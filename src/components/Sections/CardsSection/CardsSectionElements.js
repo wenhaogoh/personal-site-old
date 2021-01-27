@@ -7,6 +7,7 @@ export const SectionContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #000;
+  cursor: default;
 
   @media screen and (min-height: 800px) {
     height: 1000px;
@@ -40,7 +41,6 @@ export const SectionWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -48,7 +48,6 @@ export const SectionWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
   }
 `;
 
@@ -76,11 +75,12 @@ export const SectionH1 = styled.h1`
 
 export const CardH2 = styled.h2`
   font-size: 1rem;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 5px;
 `;
 
 export const CardP = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
 `;
 
@@ -102,7 +102,6 @@ export const CardWrapper = styled.div`
 export const CardFaceFront = styled.div`
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   position: absolute;
   padding: 30px;
   display: flex;
@@ -136,7 +135,7 @@ export const CardFaceBackSectionWrapper = styled.div`
 
 export const CardSmallIconsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, 55px);
   align-items: center;
 `;
 
@@ -147,7 +146,6 @@ export const CardSmallIconWrapper = styled.div`
     p {
       transition: opacity 0.2s ease-in;
       opacity: 1;
-      cursor: default;
     }
   }
 `;
@@ -161,6 +159,8 @@ export const CardSmallIcon = styled.img`
 `;
 
 export const CardSmallIconP = styled.p`
+  display: flex;
+  justify-content: center;
   font-size: 0.8rem;
   text-align: center;
   opacity: 0;
