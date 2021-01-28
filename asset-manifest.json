@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/personal-site/static/css/main.f0bdb2b1.chunk.css",
-    "main.js": "/personal-site/static/js/main.3d6e55f4.chunk.js",
-    "main.js.map": "/personal-site/static/js/main.3d6e55f4.chunk.js.map",
+    "main.js": "/personal-site/static/js/main.396c94e0.chunk.js",
+    "main.js.map": "/personal-site/static/js/main.396c94e0.chunk.js.map",
     "runtime-main.js": "/personal-site/static/js/runtime-main.8600e22b.js",
     "runtime-main.js.map": "/personal-site/static/js/runtime-main.8600e22b.js.map",
     "static/js/2.17f0f4b0.chunk.js": "/personal-site/static/js/2.17f0f4b0.chunk.js",
@@ -16,6 +16,7 @@
     "static/media/C.ac1d78d7.svg": "/personal-site/static/media/C.ac1d78d7.svg",
     "static/media/CSS.b3c0acbf.svg": "/personal-site/static/media/CSS.b3c0acbf.svg",
     "static/media/CSharp.e2c0510d.svg": "/personal-site/static/media/CSharp.e2c0510d.svg",
+    "static/media/DSC.837bbed8.png": "/personal-site/static/media/DSC.837bbed8.png",
     "static/media/Docker.c1458ec6.svg": "/personal-site/static/media/Docker.c1458ec6.svg",
     "static/media/DoneDeal.42db19f0.svg": "/personal-site/static/media/DoneDeal.42db19f0.svg",
     "static/media/Express.632d3c32.svg": "/personal-site/static/media/Express.632d3c32.svg",
@@ -45,6 +46,6 @@
     "static/js/runtime-main.8600e22b.js",
     "static/js/2.17f0f4b0.chunk.js",
     "static/css/main.f0bdb2b1.chunk.css",
-    "static/js/main.3d6e55f4.chunk.js"
+    "static/js/main.396c94e0.chunk.js"
   ]
 }
