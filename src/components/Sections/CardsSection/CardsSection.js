@@ -103,8 +103,8 @@ const CardsSection = (props) => {
       </SectionWrapper>
       <ModalContainer isOpen={isOpen}>
         <ModalContent>
-          <Icon onClick={() => toggleIsOpen()}>
-            <CloseIcon />
+          <Icon>
+            <CloseIcon onClick={() => toggleIsOpen()} />
           </Icon>
           {modalContent == null ? null : (
             <>

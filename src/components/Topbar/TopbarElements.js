@@ -17,6 +17,7 @@ export const TopbarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
+  cursor: pointer;
   color: #fff;
 `;
 
@@ -26,7 +27,6 @@ export const Icon = styled.div`
   right: 1.5rem;
   background: transparent;
   font-size: 2rem;
-  cursor: pointer;
   outline: none;
 `;
 

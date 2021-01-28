@@ -13,8 +13,8 @@ import { navInfo } from "../../constants/Data";
 const Topbar = (props) => {
   return (
     <TopbarContainer isOpen={props.isOpen} onClick={props.toggle}>
-      <Icon onClick={props.toggle}>
-        <CloseIcon />
+      <Icon>
+        <CloseIcon onClick={props.toggle} />
       </Icon>
       <TopbarWrapper>
         <TopbarMenu>
