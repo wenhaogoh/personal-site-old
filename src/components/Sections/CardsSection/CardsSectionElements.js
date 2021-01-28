@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaTimes } from "react-icons/fa";
 
 export const SectionContainer = styled.div`
   height: 800px;
@@ -255,6 +256,7 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalContent = styled.div`
+  position: relative;
   display: flex;
   padding: 30px;
   justify-content: flex-start;
@@ -287,4 +289,18 @@ export const ModalUl = styled.ul`
 
 export const ModalLi = styled.li`
   margin-bottom: 10px;
+`;
+
+export const CloseIcon = styled(FaTimes)`
+  color: #000;
+`;
+
+export const Icon = styled.div`
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
 `;

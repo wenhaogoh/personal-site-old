@@ -62,7 +62,7 @@ export const homeInfo = "Hello World!";
 export const aboutInfo =
   "Hi there! I'm Wen Hao and I'm a year 2 computer science undergraduate from National University of Singapore. " +
   "I enjoy solving real world problems and bringing about entertainment using the latest technologies. " +
-  "I have also fallen in love with dark mode.";
+  "I also really like dark mode!";
 
 export const skillsInfo = {
   proficient: [

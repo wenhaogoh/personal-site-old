@@ -24,6 +24,8 @@ import {
   ModalLi,
   ModalSmallIconWrapper,
   ModalSmallIconsWrapper,
+  Icon,
+  CloseIcon,
 } from "./CardsSectionElements";
 import Github from "../../../images/icons/technologies/Github.svg";
 
@@ -99,8 +101,11 @@ const CardsSection = (props) => {
           </SectionItemWrapper>
         ))}
       </SectionWrapper>
-      <ModalContainer isOpen={isOpen} onClick={() => toggleIsOpen()}>
+      <ModalContainer isOpen={isOpen}>
         <ModalContent>
+          <Icon onClick={() => toggleIsOpen()}>
+            <CloseIcon />
+          </Icon>
           {modalContent == null ? null : (
             <>
               <CardIconWrapper>
