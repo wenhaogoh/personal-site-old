@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/personal-site/static/css/main.f0bdb2b1.chunk.css",
-    "main.js": "/personal-site/static/js/main.16d6212a.chunk.js",
-    "main.js.map": "/personal-site/static/js/main.16d6212a.chunk.js.map",
+    "main.js": "/personal-site/static/js/main.4ff83c6e.chunk.js",
+    "main.js.map": "/personal-site/static/js/main.4ff83c6e.chunk.js.map",
     "runtime-main.js": "/personal-site/static/js/runtime-main.8600e22b.js",
     "runtime-main.js.map": "/personal-site/static/js/runtime-main.8600e22b.js.map",
-    "static/js/2.d60d029e.chunk.js": "/personal-site/static/js/2.d60d029e.chunk.js",
-    "static/js/2.d60d029e.chunk.js.map": "/personal-site/static/js/2.d60d029e.chunk.js.map",
+    "static/js/2.17f0f4b0.chunk.js": "/personal-site/static/js/2.17f0f4b0.chunk.js",
+    "static/js/2.17f0f4b0.chunk.js.map": "/personal-site/static/js/2.17f0f4b0.chunk.js.map",
     "index.html": "/personal-site/index.html",
     "static/css/main.f0bdb2b1.chunk.css.map": "/personal-site/static/css/main.f0bdb2b1.chunk.css.map",
-    "static/js/2.d60d029e.chunk.js.LICENSE.txt": "/personal-site/static/js/2.d60d029e.chunk.js.LICENSE.txt",
+    "static/js/2.17f0f4b0.chunk.js.LICENSE.txt": "/personal-site/static/js/2.17f0f4b0.chunk.js.LICENSE.txt",
     "static/media/AWS.568577a2.svg": "/personal-site/static/media/AWS.568577a2.svg",
     "static/media/AndroidStudio.8fbf2f83.png": "/personal-site/static/media/AndroidStudio.8fbf2f83.png",
+    "static/media/Bootstrap.333f5e43.svg": "/personal-site/static/media/Bootstrap.333f5e43.svg",
     "static/media/C.ac1d78d7.svg": "/personal-site/static/media/C.ac1d78d7.svg",
     "static/media/CSS.b3c0acbf.svg": "/personal-site/static/media/CSS.b3c0acbf.svg",
     "static/media/CSharp.e2c0510d.svg": "/personal-site/static/media/CSharp.e2c0510d.svg",
@@ -20,6 +21,7 @@
     "static/media/Express.632d3c32.svg": "/personal-site/static/media/Express.632d3c32.svg",
     "static/media/GCP.dd8fa784.svg": "/personal-site/static/media/GCP.dd8fa784.svg",
     "static/media/Git.45c85edf.svg": "/personal-site/static/media/Git.45c85edf.svg",
+    "static/media/Github.d1bb13ce.svg": "/personal-site/static/media/Github.d1bb13ce.svg",
     "static/media/HTML.8c11e1a8.svg": "/personal-site/static/media/HTML.8c11e1a8.svg",
     "static/media/Heroku.a22f05f9.svg": "/personal-site/static/media/Heroku.a22f05f9.svg",
     "static/media/Java.6cf9b956.svg": "/personal-site/static/media/Java.6cf9b956.svg",
@@ -33,6 +35,7 @@
     "static/media/Python.597b2f1f.svg": "/personal-site/static/media/Python.597b2f1f.svg",
     "static/media/React.7098e271.svg": "/personal-site/static/media/React.7098e271.svg",
     "static/media/Roboto.dce6a588.png": "/personal-site/static/media/Roboto.dce6a588.png",
+    "static/media/SQLite.237e776b.svg": "/personal-site/static/media/SQLite.237e776b.svg",
     "static/media/Sequelize.6e3e5cb7.svg": "/personal-site/static/media/Sequelize.6e3e5cb7.svg",
     "static/media/Spring.d333f33c.svg": "/personal-site/static/media/Spring.d333f33c.svg",
     "static/media/TypeScript.22f17efa.svg": "/personal-site/static/media/TypeScript.22f17efa.svg",
@@ -40,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8600e22b.js",
-    "static/js/2.d60d029e.chunk.js",
+    "static/js/2.17f0f4b0.chunk.js",
     "static/css/main.f0bdb2b1.chunk.css",
-    "static/js/main.16d6212a.chunk.js"
+    "static/js/main.4ff83c6e.chunk.js"
   ]
 }
