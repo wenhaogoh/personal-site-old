@@ -17,14 +17,14 @@ export const SkillsContainer = styled.div`
     height: 1400px;
   }
 
-  @media screen and (max-width: 768px) {
-    height: 2600px;
+  @media screen and (max-width: 1000px) {
+    height: 1600px;
     padding-top: 80px;
     justify-content: flex-start;
   }
 
-  @media screen and (max-width: 480px) {
-    height: 2600px;
+  @media screen and (max-width: 768px) {
+    height: 2100px;
     padding-top: 80px;
     justify-content: flex-start;
   }
