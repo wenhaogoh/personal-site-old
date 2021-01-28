@@ -42,6 +42,7 @@ export const SkillsH1 = styled.h1`
   color: #fff;
   text-align: center;
   font-size: 2.5rem;
+  margin-top: 40px;
 
   @media screen and (max-width: 480px) {
     font-size 2rem;
