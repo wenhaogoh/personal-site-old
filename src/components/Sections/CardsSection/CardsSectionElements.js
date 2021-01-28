@@ -32,6 +32,12 @@ export const SectionContainer = styled.div`
     padding-top: 80px;
     justify-content: flex-start;
   }
+
+  @media screen and (max-width: 768px) and (min-height: 700px) {
+    height: 1300px;
+    padding-top: 80px;
+    justify-content: flex-start;
+  }
 `;
 
 export const SectionWrapper = styled.div`
@@ -193,6 +199,27 @@ export const CardSmallIconWrapper = styled.div`
   }
 `;
 
+export const ModalSmallIconsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+`;
+
+export const ModalSmallIconWrapper = styled.div`
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    p {
+      transition: opacity 0.2s ease-in;
+      opacity: 1;
+    }
+  }
+`;
+
 export const CardSmallIcon = styled.img`
   display: flex;
   justify-content: center;
@@ -253,8 +280,11 @@ export const SectionItemWrapper = styled.div`
 `;
 
 export const ModalUl = styled.ul`
+  padding: 0 30px;
   margin-top: 10px;
   font-size: 0.9rem;
 `;
 
-export const ModalLi = styled.li``;
+export const ModalLi = styled.li`
+  margin-bottom: 10px;
+`;

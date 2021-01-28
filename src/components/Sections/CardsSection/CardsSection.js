@@ -22,7 +22,10 @@ import {
   ModalContent,
   ModalUl,
   ModalLi,
+  ModalSmallIconWrapper,
+  ModalSmallIconsWrapper,
 } from "./CardsSectionElements";
+import Github from "../../../images/icons/technologies/Github.svg";
 
 const CardsSection = (props) => {
   const [isFlipped, setIsFlipped] = useState([...props.info]);
@@ -37,7 +40,14 @@ const CardsSection = (props) => {
 
   const toggleIsOpen = (experience) => {
     setIsOpen(!isOpen);
-    setModalContent(experience);
+    if (experience) {
+      setModalContent(experience);
+    }
+  };
+
+  const launchGithub = (event, url) => {
+    event.stopPropagation();
+    window.open(url, "_blank");
   };
 
   return (
@@ -103,6 +113,18 @@ const CardsSection = (props) => {
                   <ModalLi key={index}>{description}</ModalLi>
                 ))}
               </ModalUl>
+              <ModalSmallIconsWrapper>
+                {modalContent.github ? (
+                  <ModalSmallIconWrapper
+                    onClick={(event) =>
+                      launchGithub(event, modalContent.github)
+                    }
+                  >
+                    <CardSmallIcon src={Github}></CardSmallIcon>
+                    <CardSmallIconP>GitHub</CardSmallIconP>
+                  </ModalSmallIconWrapper>
+                ) : null}
+              </ModalSmallIconsWrapper>
             </>
           )}
         </ModalContent>

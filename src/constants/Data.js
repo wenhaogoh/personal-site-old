@@ -243,7 +243,9 @@ export const experienceInfo = [
         icon: JavaScript,
       },
     ],
-    descriptions: ["point 1", "point 2", "point 3"],
+    descriptions: [
+      "Assisting the compliance team to develop an internal case management system to deter fraudulent transactions and illegal activities.",
+    ],
   },
   {
     title: "Developer Student Club",
@@ -302,7 +304,10 @@ export const experienceInfo = [
         icon: CSS,
       },
     ],
-    descriptions: ["point 1", "point 2", "point 3"],
+    descriptions: [
+      "Building a web application to digitalize the information of hawker centres for the Federation of Merchants’ Associations, Singapore (FMAS)",
+      "Led the back-end team for the initial setup (CI/CD, data model design, REST API etc.) and maintainence of back-end services.",
+    ],
   },
   {
     title: "Roboto Coding Academy",
@@ -353,7 +358,12 @@ export const experienceInfo = [
         icon: CSS,
       },
     ],
-    descriptions: ["point 1", "point 2", "point 3"],
+    descriptions: [
+      "Designed and implemented a web application for learning and human resource management.",
+      "Created an interactive content builder for trainers to put together uploaded learning resources using jQuery.",
+      "Streamlined the process of uploading resources.",
+      "Designed and implemented audit logging and the display of user activities.",
+    ],
   },
 ];
 
@@ -383,7 +393,10 @@ export const projectsInfo = [
         icon: CSS,
       },
     ],
-    descriptions: ["point 1", "point 2", "point 3"],
+    descriptions: [
+      "Created a Java application which assists university students staying on campus to manage their finances.",
+    ],
+    github: "https://github.com/wenhaogoh/tp",
   },
   {
     title: "'Til Kingdom Come",
@@ -410,7 +423,11 @@ export const projectsInfo = [
         icon: CSharp,
       },
     ],
-    descriptions: ["point 1", "point 2", "point 3"],
+    descriptions: [
+      "Created a 2D medieval fighting game with original artwork and music that supports online multiplayer.",
+      "Utilised ml-agents (based on TensorFlow) to perform reinforcement learning in generating enemy AI",
+    ],
+    github: "https://github.com/wenhaogoh/Til-Kingdom-Come",
   },
   {
     title: "DoneDeal",
@@ -437,6 +454,9 @@ export const projectsInfo = [
         icon: Java,
       },
     ],
-    descriptions: ["point 1", "point 2", "point 3"],
+    descriptions: [
+      "Created an android application which assists users to record, track and breakdown shared expenses among peers",
+    ],
+    github: "https://github.com/wenhaogoh/DoneDeal",
   },
 ];
