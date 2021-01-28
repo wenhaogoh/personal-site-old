@@ -293,6 +293,12 @@ export const ModalLi = styled.li`
 
 export const CloseIcon = styled(FaTimes)`
   color: #000;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 `;
 
 export const Icon = styled.div`
@@ -301,6 +307,5 @@ export const Icon = styled.div`
   right: 1.5rem;
   background: transparent;
   font-size: 2rem;
-  cursor: pointer;
   outline: none;
 `;
