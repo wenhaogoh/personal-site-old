@@ -61,8 +61,7 @@ export const homeInfo = "Hello World!";
 
 export const aboutInfo =
   "Hi there! I'm Wen Hao and I'm a year 2 computer science undergraduate from National University of Singapore. " +
-  "I enjoy solving real world problems and bringing about entertainment using the latest technologies. " +
-  "I also really like dark mode!";
+  "I enjoy solving real world problems and bringing about entertainment using the latest technologies. ";
 
 export const skillsInfo = {
   proficient: [
@@ -244,7 +243,9 @@ export const experienceInfo = [
       },
     ],
     descriptions: [
-      "Assisting the compliance team to develop an internal case management system to deter fraudulent transactions and illegal activities.",
+      "Developing new services in the form of REST API for the compliance team's back-end server.",
+      "Improving the robustness of products by refactoring codes and conducting automated functional tests.",
+      "Designing new front-end features for the internal case management system.",
     ],
   },
   {
@@ -305,8 +306,8 @@ export const experienceInfo = [
       },
     ],
     descriptions: [
-      "Building a web application to digitalize the information of hawker centres for the Federation of Merchants’ Associations, Singapore (FMAS)",
-      "Led the back-end team for the initial setup (CI/CD, data model design, REST API etc.) and maintainence of back-end services.",
+      "Building a digital platform to connect consumers with the 20,000 SMEs under the Federation of Merchants' Associations, Singapore (FMAS).",
+      "Leading the back-end team for the initial setup (CI/CD, data model design, REST API etc.) and maintainence of back-end services.",
     ],
   },
   {
@@ -359,10 +360,9 @@ export const experienceInfo = [
       },
     ],
     descriptions: [
-      "Designed and implemented a web application for learning and human resource management.",
+      "Streamlined the process of uploading resources by integrating various web services (AWS S3 Bucket, Twilio, JWPlayer etc.).",
       "Created an interactive content builder for trainers to put together uploaded learning resources using jQuery.",
-      "Streamlined the process of uploading resources.",
-      "Designed and implemented audit logging and the display of user activities.",
+      "Implemented audit logging and the display of user activities.",
     ],
   },
 ];
