@@ -425,7 +425,7 @@ export const projectsInfo = [
     ],
     descriptions: [
       "Created a 2D medieval fighting game with original artwork and music that supports online multiplayer.",
-      "Utilised ml-agents (based on TensorFlow) to perform reinforcement learning in generating enemy AI",
+      "Utilised ml-agents (based on TensorFlow) to perform reinforcement learning in generating enemy AI.",
     ],
     github: "https://github.com/wenhaogoh/Til-Kingdom-Come",
   },
@@ -455,7 +455,7 @@ export const projectsInfo = [
       },
     ],
     descriptions: [
-      "Created an android application which assists users to record, track and breakdown shared expenses among peers",
+      "Created an android application which assists users to record, track and breakdown shared expenses among peers.",
     ],
     github: "https://github.com/wenhaogoh/DoneDeal",
   },
