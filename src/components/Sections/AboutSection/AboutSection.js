@@ -25,7 +25,7 @@ const AboutSection = (props) => {
             linkedin.
           </AboutLink>
           <AboutLink
-            href="https://drive.google.com/uc?export=download&id=1G9F_BKcDIzCiQVJ6Klfb9SslWcuNeL1B"
+            href="https://drive.google.com/uc?export=download&id=1SpkAEtSVWEwHqwRAZIc0DWXnYHk0GHin"
             target="_blank"
           >
             resume.
